@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favIcon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/styles/header.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>AirBnb: Holiday Homes & Apartment Rentals</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navbar">
+        <div class="header__navbar_logo">
+          <img src="./assets/icons/logo_white.svg" alt="logo" />
+        </div>
+
+        <div class="header__navbar_menu">
+          <ul class="navbar__menu_options">
+            <li><a href="#">Places to stay</a></li>
+            <li><a href="#">Experiances</a></li>
+            <li><a href="#">Online Experiances</a></li>
+          </ul>
+
+          <div class="navbar_menu_pill hide">
+            <button>Anywhere</button>
+            <span class="header_vericleLine"></span>
+            <button>Any week</button>
+            <span class="header_vericleLine"></span>
+            <button>Add guest</button>
+            <button class="navbar__pill_searchBtn">
+              <img src="/assets/icons/Icon.svg" alt="search" />
+            </button>
+          </div>
+        </div>
+
+        <div class="header__navbar_userInfo">
+          <div>Become a Host</div>
+          <div><img src="./assets/icons/globe.svg" alt="globe" /></div>
+          <button class="navbar__login">
+            <img src="assets/icons/menu.svg" alt="menu" />
+            <img src="/assets/images/user_profile_pic.svg" alt="profile pic" />
+          </button>
+        </div>
+      </nav>
+      <section class="header__navbar_row2">
+        <div>
+          <label for="location">Location</label><br />
+          <input type="text" id="location" placeholder="Where are you going?" />
+        </div>
+        <span class="header_vericleLine"></span>
+        <div>
+          <label for="checkIn">Check in</label><br />
+          <input type="text" id="checkIn" placeholder="Add Dates" />
+        </div>
+
+        <span class="header_vericleLine"></span>
+        <div>
+          <label for="checkOut">Check in</label><br />
+          <input type="text" id="checkOut" placeholder="Add Dates" />
+        </div>
+        <span class="header_vericleLine"></span>
+        <div>
+          <label for="guests">Guests</label><br />
+          <input type="text" id="guests" placeholder="Add Guests" />
+        </div>
+
+        <button class="navbar__row2_searchBtn">
+          <img src="/assets/icons/Icon.svg" alt="search" />
+        </button>
+      </section>
+      <section class="heroImage__section">
+        <img src="./assets/images/heroImage.jpeg" alt="heroImage" />
+      </section>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>

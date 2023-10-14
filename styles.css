@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --bgHeader: #000;
+  --bgPrimary: #fff;
+  --bgDanger: #de3151;
+  --bgTest: rgba(0, 256, 0, 0.2);
+  --bgBtnHover: #ebebeb;
+
+  --txtClrPrimary: #000;
+  --txtPassive: #dddddd;
+  --txtClrSecondary: #fff;
+
+  --fs_xsm: 12px;
+  --fs_sm: 14px;
+
+  --widthContent: 90%;
+  --spacing_x: 20px;
+  --spacing_y_sm: 10px;
+  --spacing_y_md: 20px;
+
+}
+
+.header {
+  background-color: var(--bgHeader);
+  color: var(--txtClrSecondary);
+  font-size: var(--fs_sm);
+  padding-bottom: 30px;
+}
+
+.heroImage__section{
+    max-width: var(--widthContent);
+    height: 50vw;
+    margin:auto;
+    padding: var(--spacing_y_md) 0px;
+    position: relative;
+
+}
+.heroImage__section>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+    
+}
+.hide {
+  display: none;
+}

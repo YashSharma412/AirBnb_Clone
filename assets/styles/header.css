@@ -1,0 +1,155 @@
+
+.header__navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background-color: var(--txtClrPrimary);
+    width: var(--widthContent);
+    margin: auto;
+    padding: var(--spacing_y_sm) 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__navbar_logo {
+    flex: 1;
+  }
+  
+  .header__navbar_logo > img {
+    height: 100%;
+  }
+  
+  .header__navbar_menu {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: var(--spacing_y_sm);
+  }
+  
+  .navbar__menu_options {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: var(--spacing_x);
+  }
+  
+  .navbar__menu_options li a {
+    text-decoration: none;
+    color: var(--txtClrSecondary);
+  }
+  
+  .navbar_menu_pill {
+    background-color: var(--bgPrimary);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    border-radius: 35px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .navbar_menu_pill > button {
+    padding: 3px 5px;
+    margin: 0px 5px;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .header_vericleLine {
+    background-color: var(--txtPassive);
+    height: 24px;
+    padding: 1px;
+  }
+  
+  .navbar__pill_searchBtn {
+    padding: 3px 5px !important;
+    margin: 0px 0px;
+    background-color: var(--bgDanger) !important;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .header__navbar_userInfo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--spacing_x);
+  }
+  
+  .navbar__login {
+    background-color: var(--bgPrimary);
+    display: flex;
+    align-items: center;
+    padding: 3px 5px;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  .navbar__login img:first-child {
+    width: 20px;
+    margin: 0px 3px;
+  }
+  .navbar__login img:last-child {
+    width: 28px;
+    margin: 0px 3px;
+  }
+  
+  .header__navbar_row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--bgPrimary);
+    color: var(--txtClrPrimary);
+    width: fit-content;
+    margin: var(--spacing_y_sm) auto;
+    border-radius: 50px;
+    padding-right: 5px;
+  }
+  
+  .header__navbar_row2 div {
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+  }
+  
+  .header__navbar_row2 div:hover {
+    background-color: var(--bgBtnHover);
+    cursor: pointer;
+  }
+  
+  .header__navbar_row2 > div label {
+    font-size: var(--fs_xsm);
+    font-weight: 600;
+    line-height: 16px;
+  }
+  .header__navbar_row2 > div input {
+    width: auto;
+    background: transparent;
+    border: none;
+  }
+  
+  #location{
+      max-width: 140px;
+  }
+  
+  #checkIn, #checkOut, #guests{
+      max-width: 80px;
+  
+  }
+  
+  .navbar__row2_searchBtn {
+    margin-left: 5px;
+    padding: 3px 5px !important;
+    background-color: var(--bgDanger) !important;
+    border: none;
+    border-radius: 50%;
+  }
+  .navbar__row2_searchBtn img {
+    width: 30px;
+  }
+  
