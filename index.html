@@ -16,7 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>AirBnb: Holiday Homes & Apartment Rentals</title>
   </head>
   <body>
@@ -50,7 +50,7 @@
           <div><img src="./assets/icons/globe.svg" alt="globe" /></div>
           <button class="navbar__login">
             <img src="assets/icons/menu.svg" alt="menu" />
-            <img src="/assets/images/user_profile_pic.svg" alt="profile pic" />
+            <img src="./assets/images/header_imgs/user_profile_pic.svg" alt="profile pic" />
           </button>
         </div>
       </nav>
@@ -80,11 +80,24 @@
           <img src="/assets/icons/Icon.svg" alt="search" />
         </button>
       </section>
+
       <section class="heroImage__section">
-        <img src="./assets/images/heroImage.jpeg" alt="heroImage" />
+        <img src="./assets/images/header_imgs/heroImage.jpeg" alt="heroImage" />
+        <div class="hero__title dispFlex">
+          <h1>Not sure where to go? Perfect.</h1>
+          <button><span>I'm flexible</span></button>
+        </div>
       </section>
     </header>
+    <main>
+      <section id="h-sliderSection">
+        <h1>Inspiration for your next trip</h1>
+        <div class="cardsContainer slider">
+          <div class="slider_card"></div>
+        </div>
+      </section>
+    </main>
 
-    <script src="script.js"></script>
+    <script src="./assets/script/script.js"></script>
   </body>
 </html>
