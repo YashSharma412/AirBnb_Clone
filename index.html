@@ -16,44 +16,46 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/body.css">
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <title>AirBnb: Holiday Homes & Apartment Rentals</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="header__navbar">
-        <div class="header__navbar_logo">
-          <img src="./assets/icons/logo_white.svg" alt="logo" />
-        </div>
+    <nav class="header__navbar">
+      <div class="header__navbar_logo">
+        <img src="./assets/icons/logo_white.svg" alt="logo" />
+      </div>
 
-        <div class="header__navbar_menu">
-          <ul class="navbar__menu_options">
-            <li><a href="#">Places to stay</a></li>
-            <li><a href="#">Experiances</a></li>
-            <li><a href="#">Online Experiances</a></li>
-          </ul>
+      <div class="header__navbar_menu">
+        <ul class="navbar__menu_options">
+          <li><a href="#">Places to stay</a></li>
+          <li><a href="#">Experiances</a></li>
+          <li><a href="#">Online Experiances</a></li>
+        </ul>
 
-          <div class="navbar_menu_pill hide">
-            <button>Anywhere</button>
-            <span class="header_vericleLine"></span>
-            <button>Any week</button>
-            <span class="header_vericleLine"></span>
-            <button>Add guest</button>
-            <button class="navbar__pill_searchBtn">
-              <img src="/assets/icons/Icon.svg" alt="search" />
-            </button>
-          </div>
-        </div>
-
-        <div class="header__navbar_userInfo">
-          <div>Become a Host</div>
-          <div><img src="./assets/icons/globe.svg" alt="globe" /></div>
-          <button class="navbar__login">
-            <img src="assets/icons/menu.svg" alt="menu" />
-            <img src="./assets/images/header_imgs/user_profile_pic.svg" alt="profile pic" />
+        <div class="navbar_menu_pill hide">
+          <button>Anywhere</button>
+          <span class="header_vericleLine"></span>
+          <button>Any week</button>
+          <span class="header_vericleLine"></span>
+          <button>Add guest</button>
+          <button class="navbar__pill_searchBtn">
+            <img src="/assets/icons/Icon.svg" alt="search" />
           </button>
         </div>
-      </nav>
+      </div>
+
+      <div class="header__navbar_userInfo">
+        <div>Become a Host</div>
+        <div><img src="./assets/icons/globe.svg" alt="globe" /></div>
+        <button class="navbar__login">
+          <img src="assets/icons/menu.svg" alt="menu" />
+          <img src="./assets/images/header_imgs/user_profile_pic.svg" alt="profile pic" />
+        </button>
+      </div>
+    </nav>
+    <header class="header">
+      
       <section class="header__navbar_row2">
         <div>
           <label for="location">Location</label><br />
@@ -90,11 +92,89 @@
       </section>
     </header>
     <main>
-      <section id="h-sliderSection">
+      <section id="h-sliderSection" class="page__section">
         <h1>Inspiration for your next trip</h1>
         <div class="cardsContainer slider">
-          <div class="slider_card"></div>
+          <!-- slider_cards added here -->
+          
+          <div class="slider__card">
+            <img src="./assets/images/slider_imgs/guitar.png" alt="cardImg">
+            <div class="slider__card_body cardClrPrimary">
+              <h1>Nashville</h1>
+              <p>53 miles away</p>
+            </div>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/images/slider_imgs/lake.png" alt="cardImg">
+            <div class="slider__card_body cardClrSecondary">
+              <h1>South Heaven</h1>
+              <p>168 miles away</p>
+            </div>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/images/slider_imgs/village.png" alt="cardImg">
+            <div class="slider__card_body cardClrPrimary">
+              <h1>Stanton</h1>
+              <p>192 miles away</p>
+            </div>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/images/slider_imgs/lake.png" alt="cardImg">
+            <div class="slider__card_body cardClrSecondary">
+              <h1>New Buffalo</h1>
+              <p>130 miles away</p>
+            </div>
+          </div>
+
+
         </div>
+      </section>
+      <section id="experience__section" class="page__section">
+        <h1>Discover Airbnb Experiences</h1>
+        <div class="experience__container">
+          <div class="experience__card">
+            <div class="image__overlay experience__card_body">
+              <h1>Things to do</h1>
+              <h1>on your trip</h1>
+              <button>Experiences</button>
+            </div>
+            <img class="card_image" src="./assets/images/section_imgs/196b41cd98272a64e19b9681beb746f0.jpeg" alt="Experience Card">
+          </div>
+
+          <div class="experience__card">
+            <div class="image__overlay experience__card_body">
+              <h1>Things to do</h1>
+              <h1>from home</h1>
+              <button>Online Experiences</button>
+            </div>
+            <img class="card_image" src="./assets/images/section_imgs/a63173a16c7efe522cab3d32fa5975ee.jpeg" alt="Experience Card">
+          </div>
+        </div>
+      </section>
+
+      <section id="gift__section" class="page__section">
+        <div>
+          <h1>Shop Airbnb gift cards</h1>
+          <button>Learn more</button>
+        </div>
+        <div>
+          <img src="./assets/images/section_imgs/gift_section.jpeg" alt="gift cards">
+        </div>
+      </section>
+
+      <section id="hosting__section" class="page__section">
+        <div class="image__overlay hosting__section_body">
+          <h1><span>Questions</span><br><span> about</span><br><span> hosting?</span></h1>
+          <button>Ask a Supperhost</button>
+        </div>
+        <img src="./assets/images/section_imgs/hosting_section.jpeg" alt="host Image">
+      </section>
+
+      <section id="getaways__section" class="page__section">
+        <h1>Inspiration for future getaways</h1>
       </section>
     </main>
 

@@ -4,6 +4,7 @@
   margin: 0px;
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
+  /* background-color: rgba(0, 0, 100, 0.2); */
   /* outline: 1px solid red; */
 }
 
@@ -18,21 +19,31 @@
   --txtPassive: #dddddd;
   --txtClrSecondary: #fff;
 
-  --cardPrimary: #CC2D4A;
-  --cardSecondary: #BC1A6E;
+  --cardPrimary: #cc2d4a;
+  --cardSecondary: #bc1a6e;
+  --cardHeight: 400px;
+  --cardWidth: calc(0.75 * var(--cardHeight));
 
-  --fs_xlg: 3.2vw;
+  --experiencesCardWidth: 100%;
+  --experiencesCardHeight: calc(0.8*var(--experiencesCardWidth));
+  --fs_xlg: 3.2vmax;
   --fs_lg: 32px;
   --fs_xsm: 12px;
   --fs_sm: 16px;
 
   --widthContent: 90%;
   --spacing_x: 20px;
-  --spacing_y_sm: 10px;
-  --spacing_y_md: 25px;
+  --spacing_y_sm: 12px;
+  --spacing_y_md: 35px;
 
   --borderCircle: 50%;
   --borderRadii: 35px;
+  --borderRadiiBtn: 10px;
+
+  --cardGaps: 25px;
+
+  --buttonSpacing_x: 24px;
+  --buttonSpacing_y: 16px;
 }
 
 .header {
@@ -40,37 +51,15 @@
   color: var(--txtClrSecondary);
   font-size: var(--fs_sm);
   padding-bottom: 30px;
+  padding-top: var(--spacing_y_sm);
+}
+
+.header__navbar{
+  background-color: var(--bgHeader);
+  color: var(--txtClrSecondary);
+  font-size: var(--fs_sm);
 }
 
 .hide {
   display: none;
-}
-
-#h-sliderSection {
-  width: var(--widthContent);
-  margin: var(--spacing_y_md) auto;
-  color: var(--txtClrPrimary);
-}
-
-#h-sliderSection > h1 {
-  font-size: var(--fs_lg);
-  font-weight: 500;
-  line-height: 44px;
-}
-
-.slider{
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
-.slider::-webkit-scrollbar{
-  display: none;
-}
-
-.cardsContainer{
-  padding: var(--spacing_y_md) var(--spacing_x);
-}
-
-.slider_card{
-  min-width: 150px;
 }

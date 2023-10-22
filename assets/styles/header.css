@@ -3,9 +3,9 @@
   top: 0px;
   z-index: 100;
   background-color: var(--txtClrPrimary);
-  width: var(--widthContent);
-  margin: auto;
-  padding: var(--spacing_y_sm) 0px;
+  /* width: var(--widthContent);
+  margin: auto; */
+  padding: var(--spacing_y_sm) 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -106,6 +106,7 @@
   color: var(--txtClrPrimary);
   width: fit-content;
   margin: var(--spacing_y_sm) auto;
+  margin-top: 0px;
   border-radius: var(--borderRadii);
   padding-right: 5px;
 }
@@ -188,7 +189,7 @@
 
 .hero__title > button {
   margin-top: var(--spacing_y_sm);
-  padding: 12px 20px;
+  padding: var(--buttonSpacing_y) var(--buttonSpacing_x);
   border-radius: var(--borderRadii);
   border: none;
 }
