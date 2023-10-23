@@ -14,6 +14,7 @@
   --bgDanger: #de3151;
   --bgTest: rgba(0, 256, 0, 0.2);
   --bgBtnHover: #ebebeb;
+  --bgFooter: #F9FAFB;
 
   --txtClrPrimary: #000;
   --txtPassive: #dddddd;
@@ -61,9 +62,6 @@
   font-size: var(--fs_sm);
 }
 
-.hide {
-  display: none;
-}
 
 
 .page__section {
@@ -84,4 +82,20 @@
 
 .slider::-webkit-scrollbar {
   display: none;
+}
+
+.footer{
+  background-color: var(--bgFooter, #F9FAFB);
+  padding-top: var(--spacing_y_md);
+}
+
+hr{
+  border: 1px solid #E5E7EB;
+  margin-bottom: var(--spacing_y_sm);
+}
+
+.footer_copyright > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -182,7 +182,6 @@
   font-size: var(--fs_xlg);
   font-style: normal;
   font-weight: 500;
-  line-height: 60px; /* 116.667% */
   text-shadow: 2px 1px 6px rgba(0, 0, 0, 0.54);
   margin-bottom: var(--spacing_y_sm);
 }
@@ -209,4 +208,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.hide {
+  display: none;
 }
