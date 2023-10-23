@@ -17,6 +17,7 @@
 
   --txtClrPrimary: #000;
   --txtPassive: #dddddd;
+  --txtClrBlur: #6B7280;
   --txtClrSecondary: #fff;
 
   --cardPrimary: #cc2d4a;
@@ -28,7 +29,7 @@
   --experiencesCardHeight: calc(0.8*var(--experiencesCardWidth));
   --fs_xlg: 3.2vmax;
   --fs_lg: 32px;
-  --fs_xsm: 12px;
+  --fs_xsm: 13px;
   --fs_sm: 16px;
 
   --widthContent: 90%;
@@ -61,5 +62,26 @@
 }
 
 .hide {
+  display: none;
+}
+
+
+.page__section {
+  width: var(--widthContent);
+  margin: var(--spacing_y_md) auto;
+}
+
+.page__section > h1 {
+  margin-bottom: var(--spacing_y_sm);
+  font-size: var(--fs_lg);
+  font-weight: 500;
+}
+
+.slider {
+  overflow-x: scroll !important;
+  overflow: hidden;
+}
+
+.slider::-webkit-scrollbar {
   display: none;
 }

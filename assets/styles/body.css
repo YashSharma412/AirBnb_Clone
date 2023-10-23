@@ -4,25 +4,6 @@
   color: var(--txtClrPrimary);
 }
 
-.page__section {
-  width: var(--widthContent);
-  margin: var(--spacing_y_md) auto;
-}
-
-.page__section > h1 {
-  margin-bottom: var(--spacing_y_sm);
-  font-size: var(--fs_lg);
-  font-weight: 500;
-}
-
-.slider {
-  overflow-x: scroll !important;
-  overflow: hidden;
-}
-
-.slider::-webkit-scrollbar {
-  display: none;
-}
 
 .cardsContainer {
   padding: var(--spacing_y_md) var(--spacing_x);
@@ -142,7 +123,7 @@
 
 #gift__section > div:first-child {
   max-width: 370px;
-  min-width: 200px;
+  min-width: 300px;
   flex: 2;
 }
 
@@ -152,8 +133,8 @@
   max-width: 1000px;
 }
 
-#gift__section > div:last-child img{
-    width: 100%;
+#gift__section > div:last-child img {
+  width: 100%;
 }
 
 #gift__section > div:first-child > h1 {
@@ -197,4 +178,70 @@
   font-size: 5.5vw;
   font-weight: 500;
   margin-bottom: calc(2 * var(--spacing_y_md));
+}
+
+.destinations__options_container a {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--txtClrBlur);
+  padding: 8px 0px;
+}
+
+.destinations__options_container {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--cardGaps);
+  margin-top: var(--spacing_y_md);
+  color: var(--black, #000);
+  font-size: var(--fs_sm);
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.destinations__options_container > li {
+  display: block;
+}
+
+.destinations__options_container li :hover {
+  color: var(--txtClrPrimary);
+  border-bottom: 2px solid var(--txtClrPrimary);
+}
+
+.destination__option-active {
+  color: var(--txtClrPrimary) !important;
+  border-bottom: 2px solid var(--txtClrPrimary);
+}
+
+.destinations__container {
+  margin-top: var(--spacing_y_md);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: max-content;
+  gap: 5px;
+}
+
+.destinations__container > div {
+  padding: 5px 5px;
+}
+
+.destinations__container div h1 {
+  padding: 2px;
+  color: var(--txtClrPrimary);
+  font-size: var(--fs_sm);
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.destinations__container div p {
+  color: var(--txtClrBlur);
+  font-size: var(--fs_xsm);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.destinations__container a {
+  text-decoration: none;
 }
