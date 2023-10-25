@@ -66,7 +66,7 @@
 }
 
 .navbar__pill_searchBtn {
-  padding: 3px 5px !important;
+  padding: 8px 10px !important;
   margin: 0px 0px;
   background-color: var(--bgDanger) !important;
   border: none;
@@ -151,13 +151,13 @@
 
 .navbar__row2_searchBtn {
   margin-left: 5px;
-  padding: 3px 5px !important;
+  padding: 8px 10px !important;
   background-color: var(--bgDanger) !important;
   border: none;
   border-radius: var(--borderCircle);
 }
-.navbar__row2_searchBtn img {
-  width: 30px;
+.navbar__row2_searchBtn{
+  font-size: 28px;
 }
 
 .heroImage__section {

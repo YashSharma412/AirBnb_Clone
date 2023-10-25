@@ -22,3 +22,30 @@
 .flex_wrap{
   flex-wrap: wrap;
 }
+
+
+/* .footer table{
+  width: 50%;
+  text-decoration: none;
+}
+
+.footer table td,.footer table th {
+  text-align: start;
+  vertical-align: middle;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  width: 50%;
+}
+
+.footer table td:last-child{
+  padding-bottom: 20px;
+}
+
+.footer table th{
+  padding-bottom: 20px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--txtClrBlur, #4B5563);
+} */
