@@ -2,10 +2,11 @@
   position: sticky;
   top: 0px;
   z-index: 100;
-  background-color: var(--txtClrPrimary);
+  background-color: var(--bgHeader);
   /* width: var(--widthContent);
   margin: auto; */
   padding: var(--spacing_y_sm) 5%;
+  border-bottom: 1px solid var(--borderClrBlur);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +48,8 @@
   width: fit-content;
   margin: auto;
   border-radius: var(--borderRadii);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 0px -1px 0px 0px #F3F4F6 inset; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
 }
 
 .navbar_menu_pill > button {
@@ -85,7 +87,9 @@
   align-items: center;
   padding: 3px 5px;
   border-radius: var(--borderRadii);
-  border: none;
+  border: 1px solid var(--borderClrBlur, #E5E7EB);
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+  box-shadow: 0px -1px 0px 0px #F3F4F6 inset;
 }
 
 .navbar__login img:first-child {
@@ -109,6 +113,8 @@
   margin-top: 0px;
   border-radius: var(--borderRadii);
   padding-right: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 0px -1px 0px 0px #F3F4F6 inset; */
 }
 
 .header__navbar_row2 div {

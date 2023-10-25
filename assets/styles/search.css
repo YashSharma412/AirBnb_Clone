@@ -1,0 +1,114 @@
+:root {
+  --bgHeader: #fff;
+  --txtClrSecondary: #000;
+  --borderClrBlur: #e5e7eb;
+}
+
+#searchPage_body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 3fr 2.5fr;
+  grid-template-rows: auto 1fr;
+}
+
+.header__navbar {
+  width: 100%;
+  height: fit-content;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+#searchPage__main {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  padding: var(--spacing_x);
+  padding-top: 0px;
+  position: relative;
+}
+
+#searchPage__map {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: aqua;
+}
+
+#searchPage__main > div:first-child {
+  margin-top: var(--spacing_y_md);
+  color: var(--txtClrBlur, #6b7280);
+  font-size: var(--fs_sm);
+}
+
+.fliters__container {
+  padding: var(--spacing_y_sm) 0px;
+  background-color: var(--bgHeader);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+.fliters__container button {
+  
+  padding: 6px 12px;
+  border-radius: 35px;
+  border: 1px solid var(--borderClrBlur, #e5e7eb);
+  background: var(--white, #fff);
+  box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+}
+
+.listings__container {
+  padding: var(--spacing_y_sm) 0px;
+  display: flex;
+  flex-direction: column;
+  color: var(--txtClrBlur);
+}
+.listings__container>hr{
+  margin: var(--spacing_y_md) 0px;
+}
+.listing__card {
+  position: relative;
+  display: flex;
+  height: 200px;
+  gap: var(--cardGaps);
+}
+
+.listing__card > img {
+  height: 100%;
+  border-radius: var(--borderRadiiBtn);
+  border: 1px solid var(--borderClrBlur, #e5e7eb);
+}
+
+.listing__card_body > h1 {
+  color: var(--txtClrfocus, #374151);
+  font-size: 1.5vw;
+  line-height: 150%;
+}
+
+.likeBtn {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.listing__card_body hr {
+  width: 50px;
+  margin: var(--spacing_y_sm) 0px;
+}
+
+.listing__card_body div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.pricePerNight {
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+
+.pricePerNight > span:first-child {
+  color: var(--txtClrfocus, #374151);
+  font-size: 18px;
+  font-weight: 500;
+}

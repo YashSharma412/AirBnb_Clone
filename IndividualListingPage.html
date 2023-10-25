@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favIcon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/listingPage.css">
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+
+    <title>Airbnb: Listings</title>
+</head>
+<body>
+    <nav class="header__navbar">
+        <div class="header__navbar_logo">
+          <img src="./assets/images/header_imgs/red_logo.svg" alt="logo" />
+        </div>
+  
+        <div class="header__navbar_menu">
+          <!-- Mid section 1  -->
+          <ul class="navbar__menu_options hide">
+            <li><a href="#">Places to stay</a></li>
+            <li><a href="#">Experiances</a></li>
+            <li><a href="#">Online Experiances</a></li>
+          </ul>
+  
+          <!-- Mid section 2  -->
+          <div class="navbar_menu_pill">
+            <div class="search_again">Start your search</div>
+            <!-- <button>Anywhere</button>
+            <span class="header_vericleLine"></span>
+            <button>Any week</button>
+            <span class="header_vericleLine"></span>
+            <button>Add guest</button> -->
+            <button class="navbar__pill_searchBtn">
+              <img src="/assets/icons/Icon.png" alt="search" />
+            </button>
+          </div>
+  
+          <!--  Mid section 3  -->
+          <section class="header__navbar_row2 hide">
+            <div>
+              <label for="location">Location</label><br />
+              <input
+                type="text"
+                id="location"
+                placeholder="Where are you going?"
+              />
+            </div>
+            <span class="header_vericleLine"></span>
+            <div>
+              <label for="checkIn">Check in</label><br />
+              <input type="text" id="checkIn" placeholder="Add Dates" />
+            </div>
+  
+            <span class="header_vericleLine"></span>
+            <div>
+              <label for="checkOut">Check in</label><br />
+              <input type="text" id="checkOut" placeholder="Add Dates" />
+            </div>
+            <span class="header_vericleLine"></span>
+            <div>
+              <label for="guests">Guests</label><br />
+              <input type="text" id="guests" placeholder="Add Guests" />
+            </div>
+  
+            <button class="navbar__row2_searchBtn">
+              <img src="/assets/icons/Icon.png" alt="search" />
+            </button>
+          </section>
+          <!-- end of mid section -->
+        </div>
+  
+        <div class="header__navbar_userInfo">
+          <div><a href="">Become a Host</a></div>
+          <div><img src="./assets/icons/dark_globe.png" alt="globe" /></div>
+          <button class="navbar__login">
+            <img src="assets/icons/menu.svg" alt="menu" />
+            <img
+              src="./assets/images/header_imgs/user_profile_pic.svg"
+              alt="profile pic"
+            />
+          </button>
+        </div>
+      </nav>
+      <section class="page__section">
+        
+      </section>
+      <footer class="footer" id="page__footer">
+        <section class="explore__otherPlaces page__section">
+          <h1>Explore other options in France</h1>
+          <div class="tables_container flex_wrap">
+            <table>
+              <tr>
+                <td><a href="">Paris</a></td>
+                <td><a href="">Nice</a></td>
+              </tr>
+              <tr>
+                <td><a href="">Lille</a></td>
+                <td><a href="">Aix-en-Provence</a></td>
+              </tr>
+              <tr>
+                <td><a href="">Toulouse</a></td>
+                <td><a href="">Montpellier</a></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td><a href="">Lyon</a></td>
+                <td><a href="">Marseille</a></td>
+              </tr>
+              <tr>
+                <td><a href="">Rouen</a></td>
+                <td><a href="">Amiens</a></td>
+              </tr>
+              <tr>
+                <td><a href="">Dijon</a></td>
+                <td><a href="">Grenoble</a></td>
+              </tr>
+            </table>
+          </div>
+          <h3>Unique stays on Airbnb</h3>
+          <div class="tables_container flex_wrap">
+            <table>
+              <tr>
+                <td><a href="">Beach House Rentals</a></td>
+                <td><a href="">Camper Rentals</a></td>
+              </tr>
+              <tr>
+                <td><a href="">Cabin Rentals</a></td>
+                <td><a href="">Tiny House Rentals</a></td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <td><a href="">Glamping Rentals</a></td>
+                <td><a href="">Treehouse Rentals</a></td>
+              </tr>
+              <tr>
+                <td><a href="">Lakehouse Rentals</a></td>
+                <td><a href="">Mountain Chalet Rentals</a></td>
+              </tr>
+            </table>
+          </div>
+          <p> Airbnb > Europe > France > Bordeaux</p>
+        </section>
+        <section class="links__section page__section">   
+          <table class="links__table_one">
+            <tr>
+              <th>Support</th>
+              <th>Community</th>
+            </tr>
+            <tr>
+              <td><a href="#page__footer">Help Center</a></td>
+              <td><a href="#page__footer">Airbnb.org: disaster relief housing</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page__footer">Safety information</a></td>
+              <td><a href="#page__footer">Support: Afghan refugees</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page__footer">Cancellation options</a></td>
+              <td><a href="#page__footer">Celebrating diversity & belonging</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page__footer">Our COVID-19 Response</a></td>
+              <td><a href="#page__footer">Combating discriminatino</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page__footer">Supporting people with disabilities</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page__footer">Report a neighborhoood concern</a></td>
+            </tr>
+          </table>
+          
+          <table class="links__table_two">
+            <tr>
+              <th>Hosting</th>
+              <th>About</th>
+            </tr>
+            <tr>
+              <td><a href="#page_footer">Try hosting</a></td>
+              <td><a href="#page_footer">Newsroom</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page_footer">AirCover: protection for Hosts</a></td>
+              <td><a href="#page_footer">Learn about new features</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page_footer">Explore hosting resources</a></td>
+              <td><a href="#page_footer">Letter from our founders</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page_footer">Visit our community forum</a></td>
+              <td><a href="#page_footer">Careers</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page_footer">How to host responsibly</a></td>
+              <td><a href="#page_footer">Investors</a></td>
+            </tr>
+            <tr>
+              <td><a href="#page_footer"></a></td>
+              <td><a href="#page_footer">Airbnb Luxe</a></td>
+            </tr>
+          </table>
+        </section>
+        <section class="footer_copyright page__section">
+          <hr>
+          <div>
+            <div>
+              <a href="">© 2022 Airbnb, Inc. &middot; </a>
+              <a href="">Privacy &middot; </a> 
+              <a href="">Terms &middot; </a> 
+              <a href="">Sitemap</a>
+            </div>
+            <div class="social_link">
+              <a href=""><img src="./assets/icons/globe.png" alt="globe"> <u>English (US)</u></a>
+              &nbsp;
+              <a href=""><img src="./assets/icons/dollar-2.png" alt="currency"> <u> USD </u></a>
+              <a href=""><img src="./assets/icons/Social Media.svg" alt="socials"></a>
+              <a href=""><img src="./assets/icons/Social Media (1).svg" alt="socials"></a>
+              <a href=""><img src="./assets/icons/Social Media (2).svg" alt="socials"></a>
+            </div>
+          </div>
+        </section>
+      </footer>
+</body>
+</html>

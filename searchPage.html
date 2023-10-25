@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favIcon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/search.css" />
+    <title>AirBnb: Search Stay Places</title>
+  </head>
+  <body id="searchPage_body">
+    <nav class="header__navbar">
+      <div class="header__navbar_logo">
+        <img src="./assets/images/header_imgs/red_logo.svg" alt="logo" />
+      </div>
+
+      <div class="header__navbar_menu">
+        <!-- Mid section 1  -->
+        <ul class="navbar__menu_options hide">
+          <li><a href="#">Places to stay</a></li>
+          <li><a href="#">Experiances</a></li>
+          <li><a href="#">Online Experiances</a></li>
+        </ul>
+
+        <!-- Mid section 2  -->
+        <div class="navbar_menu_pill">
+          <button>Anywhere</button>
+          <span class="header_vericleLine"></span>
+          <button>Any week</button>
+          <span class="header_vericleLine"></span>
+          <button>Add guest</button>
+          <button class="navbar__pill_searchBtn">
+            <img src="/assets/icons/Icon.png" alt="search" />
+          </button>
+        </div>
+
+        <!--  Mid section 3  -->
+        <section class="header__navbar_row2 hide">
+          <div>
+            <label for="location">Location</label><br />
+            <input
+              type="text"
+              id="location"
+              placeholder="Where are you going?"
+            />
+          </div>
+          <span class="header_vericleLine"></span>
+          <div>
+            <label for="checkIn">Check in</label><br />
+            <input type="text" id="checkIn" placeholder="Add Dates" />
+          </div>
+
+          <span class="header_vericleLine"></span>
+          <div>
+            <label for="checkOut">Check in</label><br />
+            <input type="text" id="checkOut" placeholder="Add Dates" />
+          </div>
+          <span class="header_vericleLine"></span>
+          <div>
+            <label for="guests">Guests</label><br />
+            <input type="text" id="guests" placeholder="Add Guests" />
+          </div>
+
+          <button class="navbar__row2_searchBtn">
+            <img src="/assets/icons/Icon.png" alt="search" />
+          </button>
+        </section>
+        <!-- end of mid section -->
+      </div>
+
+      <div class="header__navbar_userInfo">
+        <div><a href="">Become a Host</a></div>
+        <div><img src="./assets/icons/dark_globe.png" alt="globe" /></div>
+        <button class="navbar__login">
+          <img src="assets/icons/menu.svg" alt="menu" />
+          <img
+            src="./assets/images/header_imgs/user_profile_pic.svg"
+            alt="profile pic"
+          />
+        </button>
+      </div>
+    </nav>
+    <main id="searchPage__main" class="slider_y">
+      <div><span> 200+</span> Airbnb Luxe stays in Bordeaux</div>
+      <div class="fliters__container">
+        <button>Free cancellation</button>
+        <button>Type of place</button>
+        <button>Price <i class="fa-solid fa-caret-down"></i></button>
+        <button>Instant Book</button>
+        <button>More filters</button>
+      </div>
+      <hr />
+      <section class="listings__container">
+        <div class="listing__card">
+          <img
+            src="./assets/images/Listing_imgs/4bb9a1003945dedcc1bdd5d42f9efd3c.jpeg"
+            alt="Listing Image"
+          />
+          <div class="listing__card_body">
+            <div>Entire home in bordeaux</div>
+            <h1>Charming Waterfront Condo</h1>
+            <div class="likeBtn">
+              <img src="./assets/icons/heartUnliked.svg" alt="like heart" />
+            </div>
+            <hr />
+            <div></div>
+            <div>4-6 guests · Entire Home · 5 beds · 3 bath</div>
+            <div>Wifi · Kitchen · Free Parking</div>
+            <hr />
+            <div class="pricePerNight">
+              <span>$200</span><span> /night</span>
+            </div>
+            <div class="test">
+              <p>5.0</p>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <p>(318 reviews)</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+        <div class="listing__card">
+          <img
+            src="./assets/images/Listing_imgs/4bb9a1003945dedcc1bdd5d42f9efd3c.jpeg"
+            alt="Listing Image"
+          />
+          <div class="listing__card_body">
+            <div>Entire home in bordeaux</div>
+            <h1>Charming Waterfront Condo</h1>
+            <div class="likeBtn">
+              <img src="./assets/icons/heartUnliked.svg" alt="like heart" />
+            </div>
+            <hr />
+            <div></div>
+            <div>4-6 guests · Entire Home · 5 beds · 3 bath</div>
+            <div>Wifi · Kitchen · Free Parking</div>
+            <hr />
+            <div class="pricePerNight">
+              <span>$200</span><span> /night</span>
+            </div>
+            <div class="test">
+              <p>5.0</p>
+              <img src="./assets/icons/star.svg" alt="star" />
+              <p>(318 reviews)</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+    </main>
+    <section id="searchPage__map"></section>
+  </body>
+</html>

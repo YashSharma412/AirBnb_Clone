@@ -1,27 +1,28 @@
-.links__section{
+.links__section, .tables_container{
     display: flex;
     flex-wrap: wrap;
     align-items: start;
     padding: var(--spacing_y_sm) 0px;
 }
 
-.links__section table{
+.footer table{
     width: 50%;
     text-decoration: none;
 }
 
-.links__section table td,.links__section table th {
+.footer table td,.footer table th {
     text-align: start;
     vertical-align: middle;
     padding-bottom: 14px;
+    padding-right: 14px;
     width: 50%;
 }
 
-.links__section table td:last-child{
+.footer table td:last-child{
     padding-bottom: 20px;
 }
 
-.links__section table th{
+.footer table th{
     padding-bottom: 20px;
 }
 

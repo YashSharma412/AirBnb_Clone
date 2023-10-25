@@ -19,6 +19,7 @@
   --txtClrPrimary: #000;
   --txtPassive: #dddddd;
   --txtClrBlur: #6B7280;
+  --txtClrfocus: #374151;
   --txtClrSecondary: #fff;
 
   --cardPrimary: #cc2d4a;
@@ -30,12 +31,13 @@
   --experiencesCardHeight: calc(0.8*var(--experiencesCardWidth));
   --fs_xlg: 3.2vmax;
   --fs_lg: 32px;
+  --fs_md: 24px;
   --fs_xsm: 13px;
   --fs_sm: 16px;
 
   --widthContent: 90%;
   --spacing_x: 20px;
-  --spacing_y_sm: 12px;
+  --spacing_y_sm: 15px;
   --spacing_y_md: 35px;
 
   --borderCircle: 50%;
@@ -43,6 +45,7 @@
   --borderRadiiBtn: 10px;
 
   --cardGaps: 25px;
+  
 
   --buttonSpacing_x: 24px;
   --buttonSpacing_y: 16px;
@@ -75,6 +78,12 @@
   font-weight: 500;
 }
 
+.page__section > h3{
+  margin-bottom: var(--spacing_y_sm);
+  font-size: var(--fs_md);
+  font-weight: 500;
+}
+
 .slider {
   overflow-x: scroll !important;
   overflow: hidden;
@@ -99,3 +108,17 @@ hr{
   align-items: center;
   justify-content: space-between;
 }
+
+a{
+  text-decoration: none;
+  color: var(--txtClrPrimary);
+}
+
+.slider_y{
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.slider_y::-webkit-scrollbar {
+  display: none;
+}
+

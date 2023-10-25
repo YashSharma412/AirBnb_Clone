@@ -1,0 +1,24 @@
+:root {
+  --bgHeader: #fff;
+  --txtClrSecondary: #000;
+  --borderClrBlur: #e5e7eb;
+
+  --fs_lg: 24px;
+
+}
+
+.navbar_menu_pill {
+  min-width: 300px;
+}
+
+.search_again {
+  flex-grow: 1;
+  padding-left: 20px;
+  color: var(--txtClrSecondary, #000);
+  font-size: var(--fs_sm);
+  font-weight: 500;
+}
+
+.flex_wrap{
+  flex-wrap: wrap;
+}
