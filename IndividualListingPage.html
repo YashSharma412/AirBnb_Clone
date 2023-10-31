@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/listingPage.css" />
     <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/listingsDetails.css" />
     <link rel="stylesheet" href="./assets/styles/footer.css" />
 
     <title>Airbnb: Listings</title>
@@ -25,7 +26,9 @@
   <body>
     <nav class="header__navbar">
       <div class="header__navbar_logo">
-        <img src="./assets/images/header_imgs/red_logo.svg" alt="logo" />
+        <a href="./index.html">
+          <img src="./assets/images/header_imgs/red_logo.svg" alt="logo" />
+        </a>
       </div>
 
       <div class="header__navbar_menu">
@@ -45,7 +48,7 @@
             <button>Add guest</button> -->
           <button class="navbar__pill_searchBtn">
             <!-- <img src="/assets/icons/Icon.png" alt="search" /> -->
-            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
           </button>
         </div>
         <!--  Mid section 3  -->
@@ -78,7 +81,7 @@
           <button class="navbar__row2_searchBtn">
             <!-- <img src="/assets/icons/Icon.png" alt="search" /> -->
             <!--  -->
-            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff"></i>
           </button>
         </section>
         <!-- end of mid section -->
@@ -96,12 +99,543 @@
         </button>
       </div>
     </nav>
+    <section id="listing__details_container" class="page__section">
+      <main>
+        <div class="flex_spaceBetween">
+          <div>
+            <h1>Entire rental unit hosted by Ghazal</h1>
+            <h3>2 guests &middot; 1 bedroom &middot; 1 bed &middot; 1 bath</h3>
+          </div>
+          <div class="hostInfo">
+            <div>
+              <img
+                src="./assets/images/Listing_imgs/host_profile.svg"
+                alt="host_profile"
+              />
+              <img
+                id="superHostBadge"
+                src="./assets/icons/Airbnb Superhost Badge.svg"
+                alt="badge"
+              />
+            </div>
+          </div>
+        </div>
+        <hr>
+        <table>
+          <tr>
+            <td><img src="./assets/icons/house_big.svg" alt="house"></td>
+            <td>
+              <h2>Entire home</h2>
+              <p>You’ll have the apartment to yourself</p>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="./assets/icons/star_big.svg" alt="stars"></td>
+            <td>
+              <h2>Enhanced Clean</h2>
+              <p>This Host committed to Airbnb’s 5-step enhanced cleaning process. <b><u>Show more</u></b></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/icons/door_big.svg" alt="door">
+            </td>
+            <td>
+              <h2>Self check-in</h2>
+              <p>Check yourself in with the keypad.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/icons/calendar_big.svg" alt="calender">
+            </td>
+            <td>
+              <h2>Free cancellation before Feb 14</h2>
+            </td>
+          </tr>
+        </table>
+        <hr>
+        <p>
+          Come and stay in this superb duplex T2, in the heart of the historic center of 
+          Bordeaux. Spacious and bright, in a real Bordeaux building in exposed stone, you 
+          will enjoy all the charms of the city thanks to its ideal location. Close to many 
+          shops, bars and restaurants, you can access the apartment by tram A and C and bus 
+          routes 27 and 44.
+        </p>
+        <p>...</p>
+        <h5 class="showMore">
+          <b>
+            <u>Show more</u>
+            <img src="./assets/listing_icons/chevron-right.svg" alt="right" />
+          </b>
+        </h5>
+        <hr>
+        <h1 style="margin-bottom: var(--spacing_y_sm);">Where you’ll sleep</h1>
+        <div id="listingRooms__image_container">
+          <div>
+            <img src="./assets/listing_images/96e5b436aa98cbfacf7fc152380f2a69.png" alt="listing rooms image">
+            <h2>Bedroom</h2>
+            <h3>1 queen bed</h3>
+          </div>
+        </div>
+        <hr>
+        <div id="listingOffers__section">
+          <h1 style="margin-bottom: var(--spacing_y_sm);">What this place offers</h1>
+          <div id="differentOffers__container" class="margin_bott_sm">
+            <div >
+              <img src="./assets/listing_icons/leaf_32.svg" alt="leaf">
+              <h2>Garden view</h2>
+            </div>
+
+            <div>
+              <img src="./assets/listing_icons/microwave_32.svg" alt="oven">
+              <h2>Kitchen</h2>
+            </div>
+
+            <div>
+              <img src="./assets/listing_icons/wifi_32.svg" alt="wifi">
+              <h2>Wifi</h2>
+            </div>
+            
+            <div>
+              <img src="./assets/listing_icons/bone_32.svg" alt="bone">
+              <h2>Pets allowed</h2>
+            </div>
+            
+            <div>
+              <img src="./assets/listing_icons/washer_32.svg" alt="disc">
+              <h2>Free washer - in building</h2>
+            </div>
+            
+            <div>
+              <img src="./assets/listing_icons/flame_32.svg" alt="fire">
+              <h2>Dryer</h2>
+            </div>
+            
+            <div>
+              <img src="./assets/listing_icons/wind_32.svg" alt="wind">
+              <h2>Central air conditioning</h2>
+            </div>
+                      
+            <div>
+              <img src="./assets/listing_icons/recorder_32.svg" alt="security">
+              <h2>Security cameras on property</h2>
+            </div>
+                      
+            <div>
+              <img src="./assets/listing_icons/milk_32.svg" alt="milk">
+              <h2>Refrigerator</h2>
+            </div>
+                      
+            <div>
+              <img src="./assets/listing_icons/bicycle_32.svg" alt="bicycle">
+              <h2>Bicycles</h2>
+            </div>
+          </div>
+          <button class="listing__page_btn">Show all 37 amenities</button>
+        </div>
+        <hr>
+        <div id="trip__dates">
+
+          <h1>7 nights in New York</h1>
+          <h5>Feb 19, 2022 - Feb 26, 2022</h5>
+        </div>
+      </main>
+      <div style="position: relative;">
+        <div id="quotation__section">
+          <div class="flex_spaceBetween">
+            <div><span class="costPerNight">$75</span> / night</div>
+            <div style="display: flex;">
+              <img src="./assets/icons/red_star_16px.svg" alt="star">
+              <span style="font-size: 14px;"><b> 5.0 &middot; <u>7 reviews</u></b></span>
+            </div>
+          </div>
+          <div id="quotation__section_datesContainer">
+            <table>
+              <tr >
+                <td class="bordRight">
+                  <label for="listingCheckIn">CHECK-IN</label>
+                  <input type="date" id="listingCheckIn">
+                </td>
+                <td>
+                  <label for="listingCheckOut">CHECK-OUT</label>
+                  <input type="date" id="listingCheckOut">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="bordTop" style="position: relative;">
+                  <label for="ListingGuests">GUESTS</label><br>
+                  <input type="text" id="" placeholder="2 guests">
+                  <button><img src="./assets/icons/chevron-down.svg" alt="down"></button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button> Reserve </button>
+          <p>You won't be charged yet</p>
+          <div class="flex_spaceBetween">
+            <span>$79 x 7 nights</span>
+            <span>$555</span>
+          </div>
+          <div class="flex_spaceBetween">
+            <span>Weekly discount</span>
+            <span>-$28</span>
+          </div>
+          <div class="flex_spaceBetween">
+            <span>Cleaning fee</span>
+            <span>$62</span>
+          </div>
+          <div class="flex_spaceBetween">
+            <span>Service fee</span>
+            <span>$83</span>
+          </div>
+          <div class="flex_spaceBetween">
+            <span>Occupancy taxes and fees</span>
+            <span>$29</span>
+          </div>
+          <hr style="margin: 0px;">
+          <div class="flex_spaceBetween">
+            <span><b>Total</b></span>
+            <span><b>$701</b></span>
+          </div>
+        </div>
+        <div class="reportListing">
+          <img src="./assets/icons/flag-priority-2.svg" alt="flag_icon">
+          <span><u>Report this listing</u></span>
+        </div>
+      </div>
+    </section>
     <hr class="page__section" />
-    <section class="Guidelines__section page__section ">
+    <section id="reviews__section" class="page__section">
+      <div>
+        <img src="./assets/icons/bigRedStar.svg" alt="big_star" />
+        <h1>5.0 &middot; 7 reviews</h1>
+      </div>
+      <div id="commulativeReviews__container">
+        <div>
+          <span> Cleanlines </span>
+          <div class="dispFlexCenter">
+            <div class="progress__bar">
+              <div class="currentProgress" style="width: 100%"></div>
+            </div>
+            <div>5.0</div>
+          </div>
+        </div>
+        <div>
+          <span> Accuracy </span>
+          <div class="dispFlexCenter">
+            <div class="progress__bar">
+              <div class="currentProgress" style="width: 100%"></div>
+            </div>
+            <div>5.0</div>
+          </div>
+        </div>
+        <div>
+          <span> Communication </span>
+          <div class="dispFlexCenter">
+            <div class="progress__bar">
+              <div class="currentProgress" style="width: 100%"></div>
+            </div>
+            <div>5.0</div>
+          </div>
+        </div>
+        <div>
+          <span> Location </span>
+          <div class="dispFlexCenter">
+            <div class="progress__bar">
+              <div class="currentProgress" style="width: 94%"></div>
+            </div>
+            <div>4.9</div>
+          </div>
+        </div>
+        <div>
+          <span> Check-in </span>
+          <div class="dispFlexCenter">
+            <div class="progress__bar">
+              <div class="currentProgress" style="width: 100%"></div>
+            </div>
+            <div>5.0</div>
+          </div>
+        </div>
+        <div>
+          <span> Value </span>
+          <div class="dispFlexCenter">
+            <div class="progress__bar">
+              <div class="currentProgress" style="width: 75%"></div>
+            </div>
+            <div>4.7</div>
+          </div>
+        </div>
+      </div>
+      <div id="individualReviews__container">
+        <div class="review__card">
+          <div class="review__card_title">
+            <img
+              src="./assets/listing_icons/reviewer_default.svg"
+              alt="reviewer_img"
+            />
+            <div>
+              <h4>Jose</h4>
+              <h5>December 2021</h5>
+            </div>
+          </div>
+          <p>
+            Wonderful neighborhood, easy access to restaurants and the subway,
+            cozy studio apartment with a super comfortable bed. Great host,
+            super helpful and responsive. Cool murphy bed...
+          </p>
+          <h5 class="showMore">
+            <b>
+              <u>Show more</u>
+              <img src="./assets/listing_icons/chevron-right.svg" alt="right" />
+            </b>
+          </h5>
+        </div>
+
+        <!-- <h5 class="showMore">
+          <b>
+            <u>Show more</u>
+            <img src="./assets/listing_icons/chevron-right.svg" alt="right" />
+          </b>
+        </h5> -->
+      </div>
+      <button class="listing__page_btn">Show all 12 reviews</button>
+    </section>
+    <hr class="page__section" />
+    <section class="listingLocation_section page__section">
+      <h3>Where you’ll be</h3>
+      <div id="ListingLocation__map_container">
+        <button class="map_icons mapZoomIn">
+          <img src="./assets/icons/zoomIn.svg" alt="zoomIn" />
+        </button>
+        <button class="map_icons mapZoomOut">
+          <img src="./assets/icons/zoomOut.svg" alt="zoomOut" />
+        </button>
+        <button class="map_icons fullScreen">
+          <img src="./assets/icons/fullScreen.svg" alt="fullscreem" />
+        </button>
+      </div>
+      <h4>Bordeaux, Nouvelle-Aquitaine, France</h4>
+      <p>
+        Very dynamic and appreciated district by the people of Bordeaux thanks
+        to rue St James and place Fernand Lafargue. Home to many historical
+        monuments such as the Grosse Cloche, the Porte de Bourgogne and the
+        Porte Cailhau, and cultural sites such as the Aquitaine Museum.
+      </p>
+      <br />
+      <h5 class="showMore">
+        <b>
+          <u>Show more</u>
+          <img src="./assets/listing_icons/chevron-right.svg" alt="right" />
+        </b>
+      </h5>
+    </section>
+    <hr class="page__section" />
+    <section class="hostedBy_section page__section">
+      <div class="hostInfo">
+        <div>
+          <img
+            src="./assets/images/Listing_imgs/host_profile.svg"
+            alt="host_profile"
+          />
+          <img
+            id="superHostBadge"
+            src="./assets/icons/Airbnb Superhost Badge.svg"
+            alt="badge"
+          />
+        </div>
+        <div>
+          <h2>Hosted by <span id="host_name">Ghazal</span></h2>
+          <p id="hostJoinDate">Joined May 2021</p>
+        </div>
+      </div>
+      <div class="hostStats__container">
+        <div>
+          <img src="./assets/icons/redStar.svg" alt="redstar" />
+          <span> 12 Reviews</span>
+        </div>
+        <div>
+          <img src="./assets/icons/redShield.svg" alt="redshield" />
+          <span> Identity verified</span>
+        </div>
+        <div>
+          <img src="./assets/icons/redBadge.svg" alt="redbadge" />
+          <span> Superhost</span>
+        </div>
+      </div>
+      <div class="superHostInfo">
+        <h5>Ghazal is a Superhost</h5>
+        <br />
+        <p>
+          Superhosts are experienced, highly rated hosts who are committed to
+          providing great stays for guests.
+        </p>
+        <br />
+        <p>Response rate: 100%</p>
+        <br />
+        <p>Response time: within an hour</p>
+        <br />
+      </div>
+      <button id="btnContactHost">Contact Host</button>
+      <div class="advice">
+        <img src="./assets/icons/security.svg" alt="security" />
+        <p>
+          To protect your payment, never transfer money or communicate outside
+          of the Airbnb website or app.
+        </p>
+      </div>
+    </section>
+    <hr class="page__section" />
+    <section class="Guidelines__section page__section">
       <h1>Things to know</h1>
-      <table>
-        
-      </table>
+      <div class="guidelines__tables_container dispFlexStart">
+        <table>
+          <tr>
+            <th>House rules</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/clock.svg" alt="clock" />
+              <span>Check-in: After 4:00 PM</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/clock.svg" alt="clock" />
+              <span>Checkout: 10:00 AM</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/door-enter.svg" alt="door" />
+              <span>Self check-in with lockbox</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/shopping-cart.svg" alt="cart" />
+              <span>Not suitable for infants (under 2 years)</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/fire.svg" alt="flame" />
+              <span>No smoking</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons" alt="" />
+              <span></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/bone.svg" alt="bone" />
+              <span>No pets</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/party.svg" alt="party" />
+              <span>No parties or events</span>
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th>Health & safety</th>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/sparkles-2.svg" alt="sparkle" />
+              <span
+                >Committed to Airbnb's enhanced cleaning process.
+                <b><u>Show more</u></b></span
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/spray-paint.svg" alt="spray" />
+              <span
+                >Airbnb's social-distancing and other COVID-19-related
+                guidelines apply</span
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/wind.svg" alt="wind" />
+              <span>Carbon monoxide alarm</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="./assets/listing_icons/washer.svg" alt="washer" />
+              <span>Smoke alarm</span>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img
+                src="./assets/listing_icons/credit-card.svg"
+                alt="credit card"
+              />
+              <span
+                >Security Deposit - if you damage the home, you may be charged
+                up to $566</span
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td class="showMore">
+              <b
+                ><u>Show more</u
+                ><img
+                  src="./assets/listing_icons/chevron-right.svg"
+                  alt="right"
+              /></b>
+            </td>
+          </tr>
+          <!-- <tr>
+            <td>
+              <img src="./assets/listing_icons" alt="">
+              <span></span>
+            </td>
+          </tr> -->
+        </table>
+        <table>
+          <tr>
+            <th>Cancellation policy</th>
+          </tr>
+          <tr>
+            <td>Free cancellation before Feb 14</td>
+          </tr>
+          <tr>
+            <td class="showMore">
+              <b
+                ><u>Show more</u
+                ><img
+                  src="./assets/listing_icons/chevron-right.svg"
+                  alt="right"
+              /></b>
+            </td>
+          </tr>
+        </table>
+      </div>
     </section>
     <footer class="footer" id="page__footer">
       <section class="explore__otherPlaces page__section">

@@ -15,6 +15,7 @@
   --bgTest: rgba(0, 256, 0, 0.2);
   --bgBtnHover: #ebebeb;
   --bgFooter: #F9FAFB;
+  --gray-200: #E5E7EB;
 
   --txtClrPrimary: #000;
   --txtPassive: #dddddd;
@@ -32,23 +33,28 @@
   --fs_xlg: 3.2vmax;
   --fs_lg: 32px;
   --fs_md: 24px;
-  --fs_xsm: 13px;
+  --fs_xmd: 20px;
   --fs_sm: 16px;
+  --fs_xsm: 14px;
 
   --widthContent: 90%;
   --spacing_x: 20px;
   --spacing_y_sm: 15px;
-  --spacing_y_md: 35px;
+  --spacing_y_md: 40px;
 
   --borderCircle: 50%;
   --borderRadii: 35px;
   --borderRadiiBtn: 10px;
 
-  --cardGaps: 25px;
+  --cardGaps: 28px;
+  --gapsSmall: 18px;
   
 
   --buttonSpacing_x: 24px;
   --buttonSpacing_y: 16px;
+
+  --buttonSpacing__x_sm: 16px;
+  --buttonSpacing__y_sm: 8px;
 }
 
 .header {
@@ -79,11 +85,18 @@
 }
 
 .page__section > h3{
+  color: var(--txtClrPrimary, #000);
   margin-bottom: var(--spacing_y_sm);
   font-size: var(--fs_md);
   font-weight: 500;
 }
 
+.page__section > h4{
+  color: var(--txtClrPrimary, #000);
+  margin-bottom: var(--spacing_y_sm);
+  font-size: var(--fs_xmd);
+  font-weight: 500;
+}
 .slider {
   overflow-x: scroll !important;
   overflow: hidden;
@@ -100,7 +113,7 @@
 
 hr{
   border: 1px solid #E5E7EB;
-  margin-bottom: var(--spacing_y_sm);
+  margin: var(--spacing_y_md) 0px;
 }
 
 .footer_copyright > div{
@@ -122,3 +135,93 @@ a{
   display: none;
 }
 
+
+.dispFlexStart{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: var(--cardGaps);
+}
+
+.dispFlexCenter{
+  display: flex;
+  gap: var(--gapsSmall);
+  align-items: center;
+  justify-content: center;
+}
+
+b{
+  font-weight: 500;
+}
+
+
+.map_icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  border-radius: var(--borderCircle);
+  background-color: var(--bgPrimary);
+  width: fit-content;
+  position: absolute;
+  box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+  border: 1px solid var(--gray-200, #E5E7EB);
+}
+
+.fullScreen{
+  right: 20px;
+  top: 20px;
+}
+
+.mapZoomOut{
+  right: 20px;
+  bottom: 20px;
+}
+
+.mapZoomIn{
+  right: 70px;
+  bottom: 20px;
+}
+
+.showMore>b{
+  display: flex;
+  font-weight: 600;
+  font-size: var(--fs_xsm);
+}
+
+.progress__bar{
+  height: 5px;
+  width: 150px;
+  border-radius: 2px;
+  background-color: var(--gray-200, #E5E7EB);
+}
+
+.currentProgress{
+  z-index: 1;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--txtClrPrimary, #000000);
+}
+
+.flex_spaceBetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bordRight{
+  border-right: 2px solid #d1d5db;
+}
+
+.bordBottom{
+  border-bottom: 2px solid #d1d5db;
+}
+
+
+.bordTop{
+  border-top: 2px solid #d1d5db;
+}
+
+.margin_bott_sm{
+  margin-bottom: var(--spacing_y_sm);
+}
